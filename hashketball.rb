@@ -204,6 +204,10 @@ def big_shoe_rebounds
     end 
   end 
   
-  biggest
+  game_hash.each do |location, team_attribute|
+    if game_hash[location][:players].key?(biggest) == true 
+      return game_hash[location[:players][biggest][:rebounds]
+    end 
+  end 
   
 end 
