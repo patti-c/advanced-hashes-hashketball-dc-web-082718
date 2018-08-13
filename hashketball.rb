@@ -180,7 +180,10 @@ end
 
 def player_stats(name)
   game_hash.each do |location, team_attribute|
-    if game_hash[location][:players].key?(name)
+    if game_hash[location][:players].key?(name) == true 
+      return game_hash[location][:players][name]
+    end 
+  end 
 end
 
 
