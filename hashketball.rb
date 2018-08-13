@@ -199,5 +199,8 @@ def big_shoe_rebounds
   
   shoe_hash.each do |player, size|
     if size > max
+      max = size
+      biggest = player
+    end 
   
 end 
