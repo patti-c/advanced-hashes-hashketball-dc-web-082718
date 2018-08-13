@@ -171,5 +171,5 @@ def player_numbers(team_name)
   game_hash.each do |location, team_attribute|
     if game_hash[location][:team_name] == team_name
       game_hash[location][:players].each do |player, stats|
-        jersey_array 
+        jersey_array << game_hash[location][:players][player][:number]
 end 
