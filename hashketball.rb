@@ -206,7 +206,7 @@ def big_shoe_rebounds
   
   game_hash.each do |location, team_attribute|
     if game_hash[location][:players].key?(biggest) == true 
-      return game_hash[location[:players][biggest][:rebounds]
+      return game_hash[location][:players][biggest][:rebounds]
     end 
   end 
   
